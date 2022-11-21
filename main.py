@@ -5,6 +5,8 @@ parser = argparse.ArgumentParser()
 ######################### general parameters ################################
 parser.add_argument('--dataset_name', type=str, default='location',
                 choices=['adult', 'accident', 'location', 'mnist', 'cifar10', 'stl10'])
+parser.add_argument('--dataset_type', type=str, default='categorical',
+                choices=['categorical', 'image'])
 parser.add_argument('--original_label', type=str, default='NY',
                 choices=['income', 'severity', 'LA', 'NY', 'default'])    
 parser.add_argument('--is_train_multiprocess', type=bool, default=False)
