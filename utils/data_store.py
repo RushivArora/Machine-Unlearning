@@ -6,7 +6,7 @@ import shutil
 
 import config
 
-from load_data import LoadData
+from utils.load_data import LoadData
 
 class DataStore:
     def __init__(self, args):
@@ -63,19 +63,19 @@ class DataStore:
         elif self.args.dataset_name == "mnist":
             self.df = load.load_mnist_data()
             self.num_records = self.df.data.shape[0]
-        # Uncomment this to test categorical dataset on DNN model    
+        # Uncomment this to test categorical dataset on DNN model
         # elif self.args['dataset_name'] in ["adult", "accident", "location"]:
         #     self.df = load.loader_cat_data(self.args['dataset_name'], self.args['original_label'], batch_size=32)
         #     self.num_records = self.df.tensors[0].data.shape[0]
         elif self.args.dataset_name == "adult":
             self.df = load.load_adult(self.args.original_label)
-            self.num_records = self.df.shape[0]        
+            self.num_records = self.df.shape[0]
         elif self.args.dataset_name == "accident":
             self.df = load.load_accident(self.args.original_label)
-            self.num_records = self.df.shape[0]    
+            self.num_records = self.df.shape[0]
         elif self.args.dataset_name == "location":
             self.df = load.load_location(self.args.original_label)
-            self.num_records = self.df.shape[0]        
+            self.num_records = self.df.shape[0]
         else:
             raise Exception("invalid dataset name")
 

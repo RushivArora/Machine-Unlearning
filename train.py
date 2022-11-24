@@ -9,7 +9,7 @@ from models.logistic_regression import LR
 from models.MLP import MLP
 from models.random_forest import RF
 
-from utils import DataStore
+from utils.data_store import DataStore
 
 ORIGINAL_DATASET_PATH = "temp_data/dataset/"
 PROCESSED_DATASET_PATH = "temp_data/processed_dataset/"
