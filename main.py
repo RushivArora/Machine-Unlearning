@@ -1,6 +1,7 @@
 import argparse
 
 from train import *
+from membership_inference import *
 
 parser = argparse.ArgumentParser()
 
@@ -87,3 +88,7 @@ if __name__ == '__main__':
         Train_Scratch_Model(args)
     elif args.exp == "model_train" and args.unlearning_method == "sisa":
         Train_Sisa_Model(args)
+    elif args.exp == "mem_inf" and args.unlearning_method == "scratch":
+        MemInfScratch(args)
+    elif args.exp == "mem_inf" and args.unlearning_method == "sisa":
+        MemInfSISA(args)
