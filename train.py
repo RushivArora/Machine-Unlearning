@@ -112,7 +112,7 @@ class Train_Scratch_Model(Train):
     def train_target_model(self):
         path = TARGET_MODEL_PATH + self.save_name + "/"
         self.data_store.create_folder(path)
-        self.train_models(self.args.target_set_num, self.args.target_num_shard, path, "target")
+        self.train_all_models(self.args.target_set_num, self.args.target_num_shard, path, "target")
         print("target model trained")
 
     def __train_model_single(self, sample_set_indices, save_name, i, j):
@@ -200,7 +200,7 @@ class Train_Sisa_Model(Train):
     def train_target_model(self):
         path = TARGET_MODEL_PATH + self.save_name + "/"
         self.data_store.create_folder(path)
-        self.train_models(self.args.target_set_num, self.args.target_num_shard, path, "target")
+        self.train_all_models(self.args.target_set_num, self.args.target_num_shard, path, "target")
         print("target model trained")
 
     def __train_model_single(self, sample_set_indices, save_name, i, j):
