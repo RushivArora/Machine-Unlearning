@@ -1,5 +1,7 @@
 import argparse
 
+from train import Train_Scratch_Model
+
 parser = argparse.ArgumentParser()
 
 ######################### general parameters ################################
@@ -77,5 +79,9 @@ parser.add_argument('--n_accumulation_steps', type=float, default=1)
 
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     args = parser.parse_args()
+    print(args.exp)
+    print(args.unlearning_method)
+    if args.exp == "model_train" and args.unlearning_method == "scratch":
+        Train_Scratch_Model(args)
