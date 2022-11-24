@@ -21,20 +21,20 @@ class DataStore:
             self.create_folder(folder)
 
     def determine_data_path(self):
-        self.save_name = "_".join((self.args['unlearning_method'], self.args['dataset_name'],
-                                   self.args['original_label'], self.args['original_model'],
-                                   str(self.args['shadow_set_num']),
-                                   str(self.args['target_set_num']),
-                                   str(self.args['shadow_set_size']),
-                                   str(self.args['target_set_size']),
-                                   str(self.args['shadow_unlearning_size']),
-                                   str(self.args['target_unlearning_size']),
-                                   str(self.args['shadow_unlearning_num']),
-                                   str(self.args['target_unlearning_num']),
-                                   str(self.args['target_num_shard']),
-                                   str(self.args['shadow_num_shard'])
+        self.save_name = "_".join((self.args.unlearning_method, self.args.dataset_name,
+                                   self.args.original_label, self.args.original_model,
+                                   str(self.args.shadow_set_num),
+                                   str(self.args.target_set_num),
+                                   str(self.args.shadow_set_size),
+                                   str(self.args.target_set_size),
+                                   str(self.args.shadow_unlearning_size),
+                                   str(self.args.target_unlearning_size),
+                                   str(self.args.shadow_unlearning_num),
+                                   str(self.args.target_unlearning_num),
+                                   str(self.args.target_num_shard),
+                                   str(self.args.shadow_num_shard)
                                    ))
-        if self.args['is_dp_defense']:
+        if self.args.is_dp_defense:
             self.save_name += "_DP"
 
         self.target_model_name = config.TARGET_MODEL_PATH + self.save_name
@@ -53,28 +53,28 @@ class DataStore:
             "mnist": 10,
             "stl10": 10
         }
-        self.num_classes = num_classes[self.args['dataset_name']]
-        if self.args['dataset_name'] == "cifar10":
+        self.num_classes = num_classes[self.args.dataset_name]
+        if self.args.dataset_name == "cifar10":
             self.df = load.load_cifar10_data()
             self.num_records = self.df.data.shape[0]
-        elif self.args['dataset_name'] == "stl10":
+        elif self.args.dataset_name == "stl10":
             self.df = load.load_stl10_data()
             self.num_records = self.df.data.shape[0]
-        elif self.args['dataset_name'] == "mnist":
+        elif self.args.dataset_name == "mnist":
             self.df = load.load_mnist_data()
             self.num_records = self.df.data.shape[0]
         # Uncomment this to test categorical dataset on DNN model    
         # elif self.args['dataset_name'] in ["adult", "accident", "location"]:
         #     self.df = load.loader_cat_data(self.args['dataset_name'], self.args['original_label'], batch_size=32)
         #     self.num_records = self.df.tensors[0].data.shape[0]
-        elif self.args['dataset_name'] == "adult":
-            self.df = load.load_adult(self.args['original_label'])
+        elif self.args.dataset_name == "adult":
+            self.df = load.load_adult(self.args.original_label)
             self.num_records = self.df.shape[0]        
-        elif self.args['dataset_name'] == "accident":
-            self.df = load.load_accident(self.args['original_label'])
+        elif self.args.dataset_name == "accident":
+            self.df = load.load_accident(self.args.original_label)
             self.num_records = self.df.shape[0]    
-        elif self.args['dataset_name'] == "location":
-            self.df = load.load_location(self.args['original_label'])
+        elif self.args.dataset_name == "location":
+            self.df = load.load_location(self.args.original_label)
             self.num_records = self.df.shape[0]        
         else:
             raise Exception("invalid dataset name")
