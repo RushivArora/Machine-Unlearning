@@ -2,12 +2,15 @@ import argparse
 import pandas as pd
 import numpy as np
 
+
 from utils import DataStore
 from lib_unlearning.record_split import RecordSplit
+
 from models.decision_tree import DT
 from models.logistic_regression import LR
 from models.MLP import MLP
 from models.random_forest import RF
+
 from utils import DataStore
 
 ORIGINAL_DATASET_PATH = "temp_data/dataset/"
@@ -17,6 +20,7 @@ TARGET_MODEL_PATH = "temp_data/target_models/"
 SPLIT_INDICES_PATH = "temp_data/split_indices/"
 ATTACK_MODEL_PATH = "temp_data/attack_models/"
 ATTACK_DATA_PATH = "temp_data/attack_data/"
+
 
 class Train:
     def __init__(self, args):
