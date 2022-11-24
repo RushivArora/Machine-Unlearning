@@ -10,6 +10,7 @@ from models.MLP import MLP
 from models.random_forest import RF
 
 from utils.data_store import DataStore
+from multiprocessing import Pool
 
 ORIGINAL_DATASET_PATH = "temp_data/dataset/"
 PROCESSED_DATASET_PATH = "temp_data/processed_dataset/"
@@ -138,10 +139,12 @@ class Train_Scratch_Model(Train):
 
 
 
-class Train_Scratch_Model(Train):
+class Train_Sisa_Model(Train):
     def __init__(self, args):
-        super(Train_Scratch_Model, self).__init__(args)
+        super(Train_Sisa_Model, self).__init__(args)
         self.args = args
+
+        print("Model train sisa")
 
         if self.args.is_sample:
             self.split_records()
@@ -154,42 +157,39 @@ class Train_Scratch_Model(Train):
         if not self.args.is_sample:
             self.record_split = pickle.load(open(config.SPLIT_INDICES_PATH + self.save_name, 'rb'))
 
-        #  data split
         self.record_split.generate_sample(model_type)
 
-        if self.args.is_train_multiprocess:
-            p = Pool(50, maxtasksperchild=1)
-
+        p = Pool(20, maxtasksperchild=1)
         """
         import psutil
         ps = psutil.Process()
         cores = ps.cpu_affinity()
-        ps.cpu_affinity(cores[0:50])
+        ps.cpu_affinity(cores[0:int(len(cores)/2)])
         """
+        for i in range(num_sample):
+            sample_set = self.record_split.sample_set[i]
+            shard_set = sample_set["shard_set"]
+            unlearning_indices = sample_set["unlearning_indices"]
+            unlearning_shard_mapping = sample_set["unlearning_shard_mapping"]
 
-        for sample_index in range(num_sample):
-            sample_set = self.record_split.sample_set[sample_index]
-            sample_indices = sample_set["set_indices"]
-            unlearning_set = sample_set["unlearning_set"]
+            # train original model
+            for j in range(num_shard):
+                save_name = save_path + "original_S%s_M%s" % (i, j)
+                self.__train_model_single(shard_set[j], save_name, i, j)
 
-            save_name_original = save_path + "original_S" + str(sample_index)
-            self.__train_model_single(sample_indices, save_name_original, sample_index, j=0)
+            # train unlearning models
+            for j in unlearning_indices:
+                self.logger.debug("training %s model set %s unlearning %s" % (model_type, i, j))
 
-            for unlearning_set_index, unlearning_indices in unlearning_set.items():
-                print("training %s model: sample set %s | unlearning set %s" % (model_type, sample_index, unlearning_set_index))
-
-                # case = "deletion"
-                unlearning_train_indices = np.setdiff1d(sample_indices, unlearning_indices)
-                # case = "online_learning"
-                if self.args.samples_to_evaluate == "online_learning":
-                    replace_indices = np.random.choice(self.record_split.replace_indices, size=unlearning_indices.shape[0], replace=False)
-                    unlearning_train_indices = np.append(unlearning_train_indices, replace_indices)
-
-                save_name_unlearning = save_path + "_".join(
-                    ("unlearning_S" + str(sample_index), str(unlearning_set_index)))
-
-                self.__train_model_single(unlearning_train_indices, save_name_unlearning, sample_index, unlearning_set_index)
-
+                shard_index = unlearning_shard_mapping[j]
+                shard_indices = shard_set[shard_index]
+                indices = np.delete(shard_indices, np.where(shard_indices == j)[0])
+                save_name_unlearning = save_path + "unlearning_S%s_M%s" % (i, shard_index) + "_" + str(j)
+                p.apply_async(self.__train_model_single, args=(indices, save_name_unlearning, i, j))
+                # sleep(0.1)
+                # self._train_model(indices, save_name_unlearning, i, j)
+        p.close()
+        p.join()
 
     def train_shadow_model(self):
         path = SHADOW_MODEL_PATH + self.save_name + "/"
