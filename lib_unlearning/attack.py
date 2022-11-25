@@ -1,7 +1,10 @@
 import logging
 import numpy as np
 
-from models import MLP, DT, RF, LR
+from models.decision_tree import DT
+from models.logistic_regression import LR
+from models.MLP import MLP
+from models.random_forest import RF
 
 
 class Attack:
@@ -28,6 +31,7 @@ class Attack:
 
     def train_attack_model(self, feature_construct_method, save_path):
         self.logger.info("training attack model")
+        print("training attack model")
         self.shadow_feature = self._concatenate_feature(self.shadow_post_df, feature_construct_method)
         label = self.shadow_post_df.label.astype('int')
         self.attack_model.train_model(self.shadow_feature, label, save_name=save_path + feature_construct_method)
@@ -36,11 +40,14 @@ class Attack:
         train_auc = self.attack_model.test_model_auc(self.shadow_feature, label)
         self.logger.info("attack model (%s, %s): train_acc: %s | train_auc: %s"
                          % (self.attack_model_name, feature_construct_method, train_acc, train_auc))
+        print("attack model (%s, %s): train_acc: %s | train_auc: %s"
+                         % (self.attack_model_name, feature_construct_method, train_acc, train_auc))
 
         return train_acc, train_auc
 
     def test_attack_model(self, feature_construct_method):
         self.logger.info("testing attack model")
+        print("testing attack model")
         self.target_feature = self._concatenate_feature(self.target_post_df, feature_construct_method)
         label = self.target_post_df.label.astype('int')
 
@@ -48,11 +55,14 @@ class Attack:
         test_auc = self.attack_model.test_model_auc(self.target_feature, label)
         self.logger.info("attack model (%s, %s): test_acc: %s | test_auc: %s"
                          % (self.attack_model_name, feature_construct_method, test_acc, test_auc))
+        print("attack model (%s, %s): test_acc: %s | test_auc: %s"
+                         % (self.attack_model_name, feature_construct_method, test_acc, test_auc))
 
         return test_acc, test_auc
 
     def obtain_attack_posterior(self, post_train, post_test, feature_construct_method):
         self.logger.info("obtaining attack posterior")
+        print("obtaining attack posterior")
         post_train[feature_construct_method] = ""
         post_test[feature_construct_method] = ""
 
@@ -67,6 +77,7 @@ class Attack:
             post_test.at[i, feature_construct_method] = post[i]
 
         self.logger.info("obtained attack posterior")
+        print("obtained attack posterior")
 
     @staticmethod
     def calculate_comparison_metrics(post_df, feature_construct_method):

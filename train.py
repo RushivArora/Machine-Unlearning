@@ -2,6 +2,8 @@ import argparse
 import pandas as pd
 import numpy as np
 
+import logging
+
 from lib_unlearning.record_split import RecordSplit
 
 from models.decision_tree import DT
@@ -159,7 +161,9 @@ class Train_Sisa_Model(Train):
 
         self.record_split.generate_sample(model_type)
 
-        p = Pool(20, maxtasksperchild=1)
+        if self.args.is_train_multiprocess:
+            p = Pool(20, maxtasksperchild=1)
+        #p = Pool(20, maxtasksperchild=1)
         """
         import psutil
         ps = psutil.Process()
@@ -179,17 +183,17 @@ class Train_Sisa_Model(Train):
 
             # train unlearning models
             for j in unlearning_indices:
-                self.logger.debug("training %s model set %s unlearning %s" % (model_type, i, j))
+                print("training %s model set %s unlearning %s" % (model_type, i, j))
 
                 shard_index = unlearning_shard_mapping[j]
                 shard_indices = shard_set[shard_index]
                 indices = np.delete(shard_indices, np.where(shard_indices == j)[0])
                 save_name_unlearning = save_path + "unlearning_S%s_M%s" % (i, shard_index) + "_" + str(j)
-                p.apply_async(self.__train_model_single, args=(indices, save_name_unlearning, i, j))
+                #p.apply_async(self.__train_model_single, args=(indices, save_name_unlearning, i, j))
                 # sleep(0.1)
-                # self._train_model(indices, save_name_unlearning, i, j)
-        p.close()
-        p.join()
+                self.__train_model_single(indices, save_name_unlearning, i, j)
+        #p.close()
+        #p.join()
 
     def train_shadow_model(self):
         path = SHADOW_MODEL_PATH + self.save_name + "/"

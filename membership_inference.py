@@ -1,10 +1,13 @@
 import argparse
 import pandas as pd
 import numpy as np
+import pickle
 
 import logging
 
 from lib_unlearning.record_split import RecordSplit
+from lib_unlearning.attack import Attack
+from lib_unlearning.construct_feature import ConstructFeature
 
 from models.decision_tree import DT
 from models.logistic_regression import LR
@@ -63,24 +66,29 @@ class MemInfBase(Base):
 
     def obtain_shadow_posterior(self):
         self.logger.info("obtaining shadow posterior")
+        print("obtaining shadow posterior")
 
         path = config.SHADOW_MODEL_PATH + self.save_name + "/"
         self.shadow_posterior_df = self._obtain_posterior(self.args.shadow_set_num, self.args.shadow_num_shard, "shadow", path)
         self.construct_feature(self.shadow_posterior_df)
         self._save_posterior(self.shadow_posterior_df, config.SHADOW_MODEL_PATH)
         self.logger.info("obtained shadow posterior")
+        print("obtained shadow posterior")
 
     def obtain_target_posterior(self):
         self.logger.info("obtaining target posterior")
+        print("obtaining target posterior")
 
         path = config.TARGET_MODEL_PATH + self.save_name + "/"
         self.target_posterior_df = self._obtain_posterior(self.args.target_set_num, self.args.target_num_shard, "target", path)
         self.construct_feature(self.target_posterior_df)
         self._save_posterior(self.target_posterior_df, config.TARGET_MODEL_PATH)
         self.logger.info("obtained target posterior")
+        print("obtained target posterior")
 
     def construct_feature(self, posterior_df):
         self.logger.info("constructing feature")
+        print("constructing feature")
         feature = ConstructFeature(posterior_df)
 
         if self.args.is_defense and self.args.top_k == 0:
@@ -93,6 +101,7 @@ class MemInfBase(Base):
 
     def launch_attack(self):
         self.logger.info("launching attack")
+        print("launching attack")
 
         save_name = "_".join((self.save_name, self.args.attack_model))
         path = config.ATTACK_MODEL_PATH + save_name + "/"
@@ -152,6 +161,9 @@ class MemInfBase(Base):
             self.logger.info("%s model: train_accuracy: %s | test_accuracy: %s ｜ overfitting: %s | "
                              "overfitting_min: %s ""| overfitting_max: %s"
                              % (i, train_accuracy, test_accuracy, overfitting, overfitting_min, overfitting_max))
+            print("%s model: train_accuracy: %s | test_accuracy: %s ｜ overfitting: %s | "
+                "overfitting_min: %s ""| overfitting_max: %s"
+                % (i, train_accuracy, test_accuracy, overfitting, overfitting_min, overfitting_max))
 
         return round(overfitting_min, 4), round(overfitting_max, 4)
 
@@ -259,6 +271,8 @@ class MemInfScratch(MemInfBase):
             for unlearning_set_index, unlearning_indices in unlearning_set.items():
                 self.logger.debug("obtain posterior for %s model: sample set %s | unlearning set %s | unlearning"
                                   % (model_type, sample_index, unlearning_set_index))
+                print("obtain posterior for %s model: sample set %s | unlearning set %s | unlearning"
+                                  % (model_type, sample_index, unlearning_set_index))
                 save_name_unlearning = save_path + "unlearning_S" + str(sample_index) + "_" + str(unlearning_set_index)
                 model_unlearning = self.get_model()
                 model_unlearning.load_model(save_name_unlearning)
@@ -342,6 +356,7 @@ class MemInfSISA(MemInfBase):
 
             for j, pos_index in enumerate(unlearning_indices):
                 self.logger.debug("obtain posterior for %s model set %s unlearning %s" % (model_name, i, pos_index))
+                print("obtain posterior for %s model set %s unlearning %s" % (model_name, i, pos_index))
 
                 shard_index = unlearning_shard_mapping[pos_index]
                 save_name_unlearning = save_path + "unlearning_S%s_M%s" % (i, shard_index) + "_" + str(pos_index)
