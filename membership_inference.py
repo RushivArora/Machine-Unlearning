@@ -192,6 +192,8 @@ class MemInfBase(Base):
             return self.df.values[index, :29].reshape([1, 29])
         elif self.dataset_name == "location":
             return self.df.values[index, :168].reshape([index.size, 168])
+        elif self.dataset_name == "spotify":
+            return self.df.values[index, :17].reshape([1, 17])
         elif self.dataset_name in ["mnist", 'stl10', 'cifar10']:
             case = self.df[index]
             return case.unsqueeze(0)
@@ -220,7 +222,7 @@ class MemInfBase(Base):
             post_dict[shard_index] = model.predict_proba(self.df[indices])
 
         # extract true label
-        if self.dataset_name in ["adult", "accident", "location"]:
+        if self.dataset_name in ["adult", "accident", "location", "spotify"]:
             true_labels = self.df.values[indices, -1]
         elif self.dataset_name in ["mnist", "stl10", "cifar10"]:
             true_labels = self.df.class_to_idx[indices]
@@ -347,6 +349,7 @@ class MemInfSISA(MemInfBase):
             neg_posterior_original = neg_posterior_original_dict[0]
 
             for shard_index in range(1, num_shard):
+                print(pos_posterior_original_dict[shard_index].shape)
                 pos_posterior_original += pos_posterior_original_dict[shard_index]
                 neg_posterior_original += neg_posterior_original_dict[shard_index]
 
@@ -390,6 +393,8 @@ class MemInfSISA(MemInfBase):
             return self.df.values[indices, :29]
         elif self.dataset_name == "location":
             return self.df.values[indices, :168]
+        elif self.dataset_name == "spotify":
+            return self.df.values[indices, :17]
         elif self.dataset_name in ["mnist", "cifar10"]:
             return self.df[indices]
         else:

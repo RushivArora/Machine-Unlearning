@@ -130,6 +130,20 @@ class PreprocessAdult:
         pickle.dump(Insta_ny, open(PROCESSED_DATASET_PATH + "Insta_ny", 'wb'))
         pickle.dump(Insta_la, open(PROCESSED_DATASET_PATH + "Insta_la", 'wb'))
 
+    def process_spotify(self):
+        print("Processing spotify")
+        spotify = pd.read_csv(ORIGINAL_DATASET_PATH + 'spotify.csv')
+
+        spotify = spotify.drop(columns=spotify.columns[0], axis=1)
+        spotify = spotify.drop(columns="track_id")
+        spotify = spotify.drop(columns="track_name")
+
+        le = LabelEncoder()
+        cols = ['artists', 'album_name', 'explicit', 'track_genre']
+        for col in cols:
+            spotify[col] = le.fit_transform(spotify[col])
+
+        pickle.dump(spotify, open(PROCESSED_DATASET_PATH + "spotify", 'wb'))
 
 if __name__ == "__main__":
     #os.chdir("../")
@@ -141,11 +155,12 @@ if __name__ == "__main__":
 
     preprocess = PreprocessAccident()
     df = pd.read_csv(ORIGINAL_DATASET_PATH + "accident.csv", low_memory=False, nrows=600000)
-    preprocess.generate_specs(df)
-    preprocess.load_data()
-    preprocess.transform_to_num()
-    preprocess.save_data()
+    #preprocess.generate_specs(df)
+    #preprocess.load_data()
+    #preprocess.transform_to_num()
+    #preprocess.save_data()
 
     preprocess = PreprocessAdult()
-    preprocess.process_adult()
-    preprocess.process_location()
+    #preprocess.process_adult()
+    #preprocess.process_location()
+    preprocess.process_spotify()

@@ -10,9 +10,13 @@ from models.decision_tree import DT
 from models.logistic_regression import LR
 from models.MLP import MLP
 from models.random_forest import RF
+from models.dnn import DNN
 
 from utils.data_store import DataStore
 from multiprocessing import Pool
+
+import torch
+from torch.utils.data import Subset, DataLoader
 
 ORIGINAL_DATASET_PATH = "temp_data/dataset/"
 PROCESSED_DATASET_PATH = "temp_data/processed_dataset/"
@@ -50,6 +54,16 @@ class Train:
             return RF()
         elif self.args.original_model == "MLP":
             return MLP()
+        elif self.args.original_model == 'LRTorch':
+            return DNN(net_name='logistic', num_classes=self.num_classes, args=self.args)
+        elif self.args.original_model == 'scnn':
+            return DNN(net_name='simple_cnn', num_classes=self.num_classes, args=self.args)
+        elif self.args.original_model == 'resnet50':
+            return DNN(net_name='resnet50', num_classes=self.num_classes, args=self.args)
+        elif self.args.original_model == 'densenet':
+            return DNN(net_name='densenet', num_classes=self.num_classes, args=self.args)
+        elif self.args.original_model == 'MLPTorch':
+            return DNN(net_name='mlp', num_classes=self.num_classes, args=self.args)
 
 
 class Train_Scratch_Model(Train):
@@ -128,7 +142,15 @@ class Train_Scratch_Model(Train):
                 train_x = np.concatenate((train_x, np.zeros((9, train_x.shape[1]))))
                 train_y = np.concatenate((train_y, np.arange(9)))
 
+            #print(train_x, train_y)
             original_model.train_model(train_x, train_y, save_name=save_name)
+
+        elif self.dataset_name in ["mnist", "cifar10", 'stl10']:
+            train_dataset = Subset(self.df, sample_set_indices)
+            train_loader = DataLoader(dataset=train_dataset, batch_size=self.args.batch_size, shuffle=True)
+            test_dataset = Subset(self.df, self.record_split.target_set[0]["set_indices"])
+            test_loader = DataLoader(dataset=test_dataset, batch_size=self.args.batch_size, shuffle=True)
+            original_model.train_model(train_loader, test_loader=test_loader, save_name=save_name)
 
         print("print model trained")
 
@@ -219,6 +241,13 @@ class Train_Sisa_Model(Train):
                 train_y = np.concatenate((train_y, np.arange(9)))
 
             original_model.train_model(train_x, train_y, save_name=save_name)
+
+        elif self.dataset_name in ["mnist", "cifar10", 'stl10']:
+            train_dataset = Subset(self.df, sample_set_indices)
+            train_loader = DataLoader(dataset=train_dataset, batch_size=self.args['batch_size'], shuffle=True)
+            test_dataset = Subset(self.df, self.record_split.target_set[0]["set_indices"])
+            test_loader = DataLoader(dataset=test_dataset, batch_size=self.args['batch_size'], shuffle=True)
+            original_model.train_model(train_loader, test_loader=test_loader, save_name=save_name)
 
         print("print model trained")
 

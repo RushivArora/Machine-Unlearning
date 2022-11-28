@@ -33,6 +33,15 @@ class LoadData:
         return df
 
     @staticmethod
+    def load_spotify(original_label):
+        df = pickle.load(open(config.PROCESSED_DATASET_PATH + "spotify", 'rb'))
+        if original_label == 'tracks':
+            df = df[['artists', 'album_name', 'track_name', 'popularity', 'duration_ms', 'explicit', 'danceability',
+            	'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness',
+                'valence', 'tempo', 'time_signature', 'track_genre']]
+        return df
+
+    @staticmethod
     def load_accident(original_label):
         df = pickle.load(open(config.PROCESSED_DATASET_PATH + "accident", 'rb'))
         # 3-class balanced
@@ -78,6 +87,8 @@ class LoadData:
             return train_dset
         elif dataset == 'location':
             df = LoadData.load_location(original_label)
+        elif dataset == 'spotify':
+            df = LoadData.load_spotify(original_label)
         else:
             raise Exception("invalid dataset name")
 

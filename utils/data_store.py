@@ -49,6 +49,7 @@ class DataStore:
             "adult": 2,
             "accident": 3,
             "location": 9,
+            "spotify": 125,
             "cifar10": 10,
             "mnist": 10,
             "stl10": 10
@@ -75,6 +76,9 @@ class DataStore:
             self.num_records = self.df.shape[0]
         elif self.args.dataset_name == "location":
             self.df = load.load_location(self.args.original_label)
+            self.num_records = self.df.shape[0]
+        elif self.args.dataset_name == "spotify":
+            self.df = load.load_spotify(self.args.original_label)
             self.num_records = self.df.shape[0]
         else:
             raise Exception("invalid dataset name")
