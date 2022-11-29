@@ -1,0 +1,449 @@
+mem_inf
+scratch
+print loading data
+Files already downloaded and verified
+Files already downloaded and verified
+print data loaded
+obtaining shadow posterior
+obtain posterior for shadow model: sample set 0 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 0 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 1 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 2 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 3 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 4 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 5 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 6 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 7 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 8 | unlearning set 19 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 0 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 1 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 2 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 3 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 4 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 5 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 6 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 7 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 8 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 9 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 10 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 11 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 12 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 13 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 14 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 15 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 16 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 17 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 18 | unlearning
+obtain posterior for shadow model: sample set 9 | unlearning set 19 | unlearning
+constructing feature
+obtained shadow posterior
+obtaining target posterior
+obtain posterior for target model: sample set 0 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 0 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 1 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 2 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 3 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 4 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 5 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 6 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 7 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 8 | unlearning set 19 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 0 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 1 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 2 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 3 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 4 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 5 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 6 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 7 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 8 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 9 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 10 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 11 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 12 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 13 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 14 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 15 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 16 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 17 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 18 | unlearning
+obtain posterior for target model: sample set 9 | unlearning set 19 | unlearning
+constructing feature
+obtained target posterior
+launching attack
+training attack model
+attack model (DT, direct_diff): train_acc: 0.5125 | train_auc: 0.519625
+testing attack model
+attack model (DT, direct_diff): test_acc: 0.495 | test_auc: 0.48972499999999997
+obtaining attack posterior
+obtained attack posterior
+training attack model
+attack model (DT, sorted_diff): train_acc: 0.515 | train_auc: 0.5202875
+testing attack model
+attack model (DT, sorted_diff): test_acc: 0.495 | test_auc: 0.492225
+obtaining attack posterior
+obtained attack posterior
+training attack model
+attack model (DT, direct_concat): train_acc: 0.5125 | train_auc: 0.517775
+testing attack model
+attack model (DT, direct_concat): test_acc: 0.5075 | test_auc: 0.5066625
+obtaining attack posterior
+obtained attack posterior
+training attack model
+attack model (DT, sorted_concat): train_acc: 0.515 | train_auc: 0.5202875
+testing attack model
+attack model (DT, sorted_concat): test_acc: 0.495 | test_auc: 0.492225
+obtaining attack posterior
+obtained attack posterior
+training attack model
+attack model (DT, l2_distance): train_acc: 0.505 | train_auc: 0.50545
+testing attack model
+attack model (DT, l2_distance): test_acc: 0.505 | test_auc: 0.505475
+obtaining attack posterior
+obtained attack posterior
+training attack model
+attack model (DT, basic_mia): train_acc: 0.5 | train_auc: 0.5
+testing attack model
+attack model (DT, basic_mia): test_acc: 0.5 | test_auc: 0.5
+obtaining attack posterior
+obtained attack posterior

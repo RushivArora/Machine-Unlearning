@@ -244,9 +244,9 @@ class Train_Sisa_Model(Train):
 
         elif self.dataset_name in ["mnist", "cifar10", 'stl10']:
             train_dataset = Subset(self.df, sample_set_indices)
-            train_loader = DataLoader(dataset=train_dataset, batch_size=self.args['batch_size'], shuffle=True)
+            train_loader = DataLoader(dataset=train_dataset, batch_size=self.args.batch_size, shuffle=True)
             test_dataset = Subset(self.df, self.record_split.target_set[0]["set_indices"])
-            test_loader = DataLoader(dataset=test_dataset, batch_size=self.args['batch_size'], shuffle=True)
+            test_loader = DataLoader(dataset=test_dataset, batch_size=self.args.batch_size, shuffle=True)
             original_model.train_model(train_loader, test_loader=test_loader, save_name=save_name)
 
         print("print model trained")

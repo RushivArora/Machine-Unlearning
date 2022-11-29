@@ -13,6 +13,7 @@ from models.decision_tree import DT
 from models.logistic_regression import LR
 from models.MLP import MLP
 from models.random_forest import RF
+from models.dnn import DNN
 
 from utils.data_store import DataStore
 from multiprocessing import Pool
@@ -54,7 +55,16 @@ class Base:
             return RF()
         elif self.args.original_model == "MLP":
             return MLP()
-
+        elif self.args.original_model == 'LRTorch':
+            return DNN(net_name='logistic', num_classes=self.num_classes, args=self.args)
+        elif self.args.original_model == 'scnn':
+            return DNN(net_name='simple_cnn', num_classes=self.num_classes, args=self.args)
+        elif self.args.original_model == 'resnet50':
+            return DNN(net_name='resnet50', num_classes=self.num_classes, args=self.args)
+        elif self.args.original_model == 'densenet':
+            return DNN(net_name='densenet', num_classes=self.num_classes, args=self.args)
+        elif self.args.original_model == 'MLPTorch':
+            return DNN(net_name='mlp', num_classes=self.num_classes, args=self.args)
 
 class MemInfBase(Base):
     def __init__(self, args):
@@ -195,8 +205,14 @@ class MemInfBase(Base):
         elif self.dataset_name == "spotify":
             return self.df.values[index, :17].reshape([1, 17])
         elif self.dataset_name in ["mnist", 'stl10', 'cifar10']:
-            case = self.df[index]
-            return case.unsqueeze(0)
+            #print("Index is ", index)
+            #print("DF", self.df)
+            case = self.df[index[0]]
+            #for val in index:
+            #    return self.df[val]
+            #print(case)
+            return case[0].unsqueeze(0)
+            #return case.unsqueeze(0)
         else:
             raise Exception("invalid test dataset")
 
